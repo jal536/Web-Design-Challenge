@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pyber</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+  <div class="topnav" id="myTopnav">
+    <a href="./Pyber.html" class="active">Pyber</a>
+      <div class="dropdown">
+        <button class="dropbtn">Plots
+          <i class="fa fa-caret-down"></i>
+        </button>
+         <div class="dropdown-content">
+           <a class="Pyber_scatter_plot" href="./Pyber_scatter_plot.html">Pyber Scatter Plot</a>
+           <a class="total_drivers" href="./total_drivers.html">Total Drivers</a>
+           <a class="total_fares" href="./total_fares.html">Total Fares</a>
+           <a class="total_rides" href="./total_rides.html">Total Rides</a>
+         </div>
+       </div>
+       <a href="./Comparison.html">Comparison</a>
+       <a href="./Data.html">Data</a>
+       <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+
+  <section>
+    <div class="container">
+      <h2>Summary: Pyber Analysis</h2>
+      <div class="row">
+        <div class="col-3 col-sm-6 col-md-12">
+          <div class="box">
+            <a target="_blank" href="./Pyber_scatter_plot.html">
+            <img src="./Pyber_scatter_plot.png" alt="Pyber Scatter Plot" class="responsive">
+            </a>
+          </div>
+          <div class="col">  
+            <p>The purpose of this project was to analyze the ride sharing data from Pyber, a ride sharing business, given different location demographics, to see the differences in location type, number of and total fares, and number of divers per location type.</p>
+            <br>
+            <p>We imported data from two different csv files using pandas in a python environment, then subsequently plotted the data using matplotlib to visualize the data. We used both scatter plots to be able to see the distribution of data and pie graphs to look at the percentages of the data as a whole.  </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-3 col-sm-6 col-md-6"> 
+            <div class="box">
+              <h2>Visualizations</h2>
+              <article>
+                <figure>
+                  <a target="_blank" href="./Pyber_scatter_plot.html">
+                  <img src="./Pyber_scatter_plot.png" alt="Pyber Scatter Plot" class="responsive">
+                </figure>
+              </article>
+              <figure>
+                <a target="_blank" href="./total_drivers.html">
+                <img src="./total_drivers.png" alt="Total Drivers Graph" class="responsive">
+              </figure>
+              <figure>
+                <a target="_blank" href="./total_fares.html">
+                <img src="./total_fares.png" alt="Total Fares Graph" class="responsive">
+              </figure>
+              <figure>
+                <a target="_blank" href="./total_rides.html">
+                <img src="./total_rides.png" alt="Total Rides Graph" class="responsive">
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+</body>
+</html>
